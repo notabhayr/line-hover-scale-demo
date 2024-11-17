@@ -1,0 +1,110 @@
+/* Tabs Container */
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 40px 20px;
+  position: relative;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.tabs-container.dark {
+  background-color: #121212; /* Dark background */
+}
+
+.tabs-container.light {
+  background-color: #f5f5f5; /* Light background */
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Tabs Wrapper */
+.tabs {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px 32px;
+  width: fit-content;
+  border-radius: 24px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.tabs-container.dark .tabs {
+  background-color: #1e1e1e;
+  border: 2px solid #232323;
+}
+
+.tabs-container.light .tabs {
+  background-color: #ffffff;
+  border: 2px solid #e8dfdf;
+}
+
+/* Background Pill */
+.pill {
+  position: absolute;
+  border-radius: 24px;
+  z-index: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  mix-blend-mode: normal;
+  transition: background-color 0.3s ease;
+}
+
+.tabs-container.dark .pill {
+  background-color: #ffffff; /* Light pill for dark mode */
+}
+
+.tabs-container.light .pill {
+  background-color: #1c1c1c; /* Darker pill for light mode */
+}
+
+/* Tab Labels */
+.tab {
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+  padding: 4px;
+  line-height: 120%;
+  transition: color 0.3s, opacity 0.3s;
+}
+
+.tabs-container.dark .tab {
+  color: white; /* Default text color in dark mode */
+}
+
+.tabs-container.light .tab {
+  color: black; /* Default text color in light mode */
+}
+
+.tab:hover {
+  opacity: 0.6;
+}
+
+.tab.active {
+  opacity: 1;
+}
+
+.tabs-container.dark .tab.active {
+  color: #121212; /* Dark active text on light pill */
+}
+
+.tabs-container.light .tab.active {
+  color: white; /* Light active text on dark pill */
+}
