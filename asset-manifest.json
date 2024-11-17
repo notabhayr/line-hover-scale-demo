@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/line-hover-scale-demo/static/css/main.74d3e642.css",
-    "main.js": "/line-hover-scale-demo/static/js/main.0c60cf1b.js",
+    "main.css": "/line-hover-scale-demo/static/css/main.4d35b704.css",
+    "main.js": "/line-hover-scale-demo/static/js/main.4a2377ff.js",
     "static/js/453.67c68819.chunk.js": "/line-hover-scale-demo/static/js/453.67c68819.chunk.js",
     "index.html": "/line-hover-scale-demo/index.html",
-    "main.74d3e642.css.map": "/line-hover-scale-demo/static/css/main.74d3e642.css.map",
-    "main.0c60cf1b.js.map": "/line-hover-scale-demo/static/js/main.0c60cf1b.js.map",
+    "main.4d35b704.css.map": "/line-hover-scale-demo/static/css/main.4d35b704.css.map",
+    "main.4a2377ff.js.map": "/line-hover-scale-demo/static/js/main.4a2377ff.js.map",
     "453.67c68819.chunk.js.map": "/line-hover-scale-demo/static/js/453.67c68819.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74d3e642.css",
-    "static/js/main.0c60cf1b.js"
+    "static/css/main.4d35b704.css",
+    "static/js/main.4a2377ff.js"
   ]
 }
