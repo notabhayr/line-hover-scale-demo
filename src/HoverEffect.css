@@ -1,0 +1,21 @@
+.hover-container {
+  display: flex;
+
+  justify-content: center; /* Center the lines horizontally */
+  align-items: center; /* Align lines vertically within the container */
+  height: fit-content; /* Full viewport height */
+  width: fit-content; /* Container width matches the total lines and spacing */
+  background-color: white; /* White background for contrast */
+  position: absolute; /* Use absolute positioning */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for container's size */
+  margin: 0 0; /* Center the container horizontally on the page */
+}
+
+.line {
+  background-color: black; /* Line color */
+  transform-origin: center; /* Scale from the center of the line */
+  margin-right: 10px; /* Spacing between lines */
+  cursor: pointer; /* Indicate interactiveness */
+}
